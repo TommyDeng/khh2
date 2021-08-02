@@ -1,4 +1,4 @@
-package com.tdw.khh2.common;
+package com.tdw.khh2.common.jwt;
 
 import com.tdw.khh2.entity.Account;
 import com.tdw.khh2.repository.AccountRepository;
@@ -25,11 +25,10 @@ public class JwtUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-//        log.info("UserDetailsService - > loadUserByUsername");
         Account account = accountRepository.findByEmail(username);
         if (account == null) {
             // throw new UsernameNotFoundException("User name not found: " + username);
-            throw new BadCredentialsException("User name not found: " + username);
+            throw new BadCredentialsException("Email not found: " + username);
         }
 
         List<String> accountRoles = accountRoleRepository.findAccountRolesOfSql(account.getId());

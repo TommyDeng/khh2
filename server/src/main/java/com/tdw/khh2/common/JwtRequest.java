@@ -1,5 +1,7 @@
 package com.tdw.khh2.common;
 
+import org.springframework.web.bind.annotation.RequestParam;
+
 import java.io.Serializable;
 
 public class JwtRequest implements Serializable {

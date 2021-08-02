@@ -5,13 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25b70891-9cfa-4aff-83cd-bc0b9d6b4fa2" name="Default Changelist" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/filter/ExceptionHandlerFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_xiaoymin_swagger_bootstrap_ui_1_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/exception/ExceptionHandlerFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/exception/RestControllerExceptionAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/jwt/JwtAuthenticationEntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_27_0_GA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_25_0_GA.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/JwtAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/JwtAuthenticationEntryPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/JwtRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/JwtRequestFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/JwtUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/JwtUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/JwtAuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/jwt/JwtAuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/JwtAuthenticationEntryPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/JwtRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/JwtRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/JwtRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/jwt/JwtRequestFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/JwtTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/jwt/JwtTokenUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/JwtUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/jwt/JwtUserDetailsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/RestControllerExceptionAdvice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/RestReply.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/RestReply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/filter/ExceptionHandlerFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/config/SwaggerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/controller/AccountCtl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/controller/AccountCtl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/controller/CommonCtl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/controller/CommonCtl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/controller/RoleCtl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/controller/RoleCtl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,13 +107,15 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -123,6 +139,7 @@
       <workItem from="1627177756070" duration="4469000" />
       <workItem from="1627370242407" duration="83000" />
       <workItem from="1627439003232" duration="74930000" />
+      <workItem from="1627869477218" duration="7215000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1627177795311</created>
@@ -159,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627806502789</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Initial commit">
+      <created>1627868887533</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1627868887533</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,17 +204,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/filter/ExceptionHandlerFilter.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,4 +1,4 @@
-package com.tdw.khh2.common;
+package com.tdw.khh2.common.jwt;
 
 import lombok.extern.java.Log;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +26,6 @@ public class JwtRequestFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain)
             throws ServletException, IOException {
-        log.info("Jwt Filter.......");
         final String requestTokenHeader = request.getHeader("Authorization");
 
         // JWT Token is in the form "Bearer token". Remove Bearer word and get only the Token
@@ -53,6 +52,7 @@ public class JwtRequestFilter extends OncePerRequestFilter {
 
     @Override
     protected boolean shouldNotFilter(HttpServletRequest request) {
-        return request.getRequestURI().matches("/") || request.getRequestURI().matches("/authenticate");
+        //TODO 与SecurityConfig中白名单合并
+        return request.getRequestURI().matches("/") || request.getRequestURI().matches("/token");
     }
 }

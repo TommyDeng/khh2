@@ -1,10 +1,10 @@
 package com.tdw.khh2.config;
 
-import com.tdw.khh2.common.JwtAuthenticationEntryPoint;
-import com.tdw.khh2.common.JwtRequestFilter;
-import com.tdw.khh2.common.JwtTokenUtil;
-import com.tdw.khh2.common.JwtUserDetailsService;
-import com.tdw.khh2.common.filter.ExceptionHandlerFilter;
+import com.tdw.khh2.common.exception.ExceptionHandlerFilter;
+import com.tdw.khh2.common.jwt.JwtAuthenticationEntryPoint;
+import com.tdw.khh2.common.jwt.JwtRequestFilter;
+import com.tdw.khh2.common.jwt.JwtTokenUtil;
+import com.tdw.khh2.common.jwt.JwtUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,6 +18,7 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.security.web.csrf.CsrfFilter;
 
 @Configuration
 @EnableWebSecurity
@@ -48,6 +49,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     public JwtAuthenticationEntryPoint jwtAuthenticationEntryPoint() {
         return new JwtAuthenticationEntryPoint();
     }
+
     @Bean
     public ExceptionHandlerFilter exceptionHandlerFilter() {
         return new ExceptionHandlerFilter();
@@ -70,15 +72,18 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity httpSecurity) throws Exception {
-        // We don't need CSRF for this example
-        httpSecurity.csrf().disable()
+        //TODO 与Filter中白名单合并
+        httpSecurity
+                // We don't need CSRF for this example
+                .csrf().disable()
                 // dont authenticate this particular request
-                .authorizeRequests().antMatchers("/","/authenticate", "/v2/api-docs",
+                .authorizeRequests().antMatchers("/", "/token", "/v2/api-docs",
                 "/configuration/ui",
                 "/swagger-resources/**",
                 "/swagger-ui/**",
                 "/configuration/security",
                 "/swagger-ui.html",
+                "/doc.html",
                 "/v2/api-docs",
                 "/v3/api-docs",
                 "/webjars/**").permitAll().
@@ -92,7 +97,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
         // Add a filter to validate the tokens with every request
         httpSecurity.addFilterBefore(jwtRequestFilter(), UsernamePasswordAuthenticationFilter.class);
-        httpSecurity.addFilterBefore(exceptionHandlerFilter(),JwtRequestFilter.class);
+        httpSecurity.addFilterBefore(exceptionHandlerFilter(), CsrfFilter.class);
     }
 
 }

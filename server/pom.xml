@@ -39,7 +39,11 @@
 <!--            <artifactId>mybatis-plus-boot-starter</artifactId>-->
 <!--            <version>3.4.3.1</version>-->
 <!--        </dependency>-->
-
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>swagger-bootstrap-ui</artifactId>
+            <version>1.9.6</version>
+        </dependency>
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-boot-starter</artifactId>

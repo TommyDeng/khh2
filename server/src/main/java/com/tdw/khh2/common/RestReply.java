@@ -18,26 +18,26 @@ public class RestReply<T> implements Serializable {
     private LocalDateTime timestamp;//返回时间
     private T data;//返回数据
 
-    public static RestReply success() {
-        return RestReply.success(null, null);
+    public static RestReply ok() {
+        return RestReply.ok(null, null);
     }
 
-    public static <T> RestReply success(T data) {
-        return RestReply.success(null, data);
+    public static <T> RestReply ok(T data) {
+        return RestReply.ok(null, data);
     }
 
-    public static <T> RestReply success(String toolTips, T data) {
+    public static <T> RestReply ok(String toolTips, T data) {
         return new RestReply(HttpStatus.OK.value(), HttpStatus.OK.getReasonPhrase(), toolTips, LocalDateTime.now(), data);
     }
 
-    public static <T> RestReply failed(T data) {
-        return RestReply.failed(null, data);
-    }
-
-    public static <T> RestReply failed(String toolTips, T data) {
-        return new RestReply(HttpStatus.INTERNAL_SERVER_ERROR.value(), HttpStatus.INTERNAL_SERVER_ERROR.getReasonPhrase(),
-                toolTips, LocalDateTime.now(), data);
-    }
+//    public static <T> RestReply failed(T data) {
+//        return RestReply.failed(null, data);
+//    }
+//
+//    public static <T> RestReply failed(String toolTips, T data) {
+//        return new RestReply(HttpStatus.INTERNAL_SERVER_ERROR.value(), HttpStatus.INTERNAL_SERVER_ERROR.getReasonPhrase(),
+//                toolTips, LocalDateTime.now(), data);
+//    }
 
 
     public static RestReply custom(HttpStatus status) {

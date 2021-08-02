@@ -38,6 +38,7 @@ public class SwaggerConfig {
                 .securityContexts(Arrays.asList(securityContext()))
                 .securitySchemes(Arrays.asList(apiKey()))
                 .produces(DefaultProducesAndConsumes)
+                .consumes(DefaultProducesAndConsumes)
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.tdw.khh2"))
                 .paths(PathSelectors.any())
