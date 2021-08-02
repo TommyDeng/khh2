@@ -3,6 +3,7 @@ package com.tdw.khh2.common.filter;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.jsonwebtoken.ExpiredJwtException;
+import lombok.extern.java.Log;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -14,6 +15,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+
+@Log
 public class ExceptionHandlerFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
@@ -30,7 +33,7 @@ public class ExceptionHandlerFilter extends OncePerRequestFilter {
             response.sendError(HttpStatus.INTERNAL_SERVER_ERROR.value(), e.getMessage());
 //            response.getWriter().write(convertObjectToJson(errorResponse));
         }
-
+        log.info("-------------");
     }
 
 
