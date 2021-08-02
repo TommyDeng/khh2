@@ -5,6 +5,7 @@ import com.tdw.khh2.repository.AccountRepository;
 import com.tdw.khh2.repository.AccountRoleRepository;
 import lombok.extern.java.Log;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -24,10 +25,10 @@ public class JwtUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        log.info("UserDetailsService - > loadUserByUsername");
         Account account = accountRepository.findByEmail(username);
         if (account == null) {
-            throw new UsernameNotFoundException("User name not found: " + username);
+            // throw new UsernameNotFoundException("User name not found: " + username);
+            throw new BadCredentialsException("User name not found: " + username);
         }
 
         List<String> accountRoles = accountRoleRepository.findAccountRolesOfSql(account.getId());

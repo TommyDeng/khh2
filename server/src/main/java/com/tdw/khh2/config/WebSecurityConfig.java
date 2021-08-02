@@ -4,6 +4,7 @@ import com.tdw.khh2.common.JwtAuthenticationEntryPoint;
 import com.tdw.khh2.common.JwtRequestFilter;
 import com.tdw.khh2.common.JwtTokenUtil;
 import com.tdw.khh2.common.JwtUserDetailsService;
+import com.tdw.khh2.common.filter.ExceptionHandlerFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -47,6 +48,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     public JwtAuthenticationEntryPoint jwtAuthenticationEntryPoint() {
         return new JwtAuthenticationEntryPoint();
     }
+    @Bean
+    public ExceptionHandlerFilter exceptionHandlerFilter() {
+        return new ExceptionHandlerFilter();
+    }
 
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
@@ -87,6 +92,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
         // Add a filter to validate the tokens with every request
         httpSecurity.addFilterBefore(jwtRequestFilter(), UsernamePasswordAuthenticationFilter.class);
+        httpSecurity.addFilterBefore(exceptionHandlerFilter(),JwtRequestFilter.class);
     }
 
 }

@@ -5,65 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25b70891-9cfa-4aff-83cd-bc0b9d6b4fa2" name="Default Changelist" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_classgraph_classgraph_4_8_83.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_bean_validators_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_boot_starter_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_data_rest_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_oas_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_webflux_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_webmvc_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_annotations_2_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_models_2_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_20.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_20.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_3_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_2_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_2_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jpb/jpb-settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/JwtAuthenticationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/JwtAuthenticationEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/JwtRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/JwtRequestFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/JwtResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/JwtTokenUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/JwtUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/RestControllerExceptionAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/RestReply.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/controller/AccountCtl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/controller/CommonCtl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/controller/RoleCtl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/entity/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/entity/AccountRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/entity/EntityBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/entity/Resource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/entity/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/entity/RoleResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/repository/AccountRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/repository/AccountRoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/repository/ResourceRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/repository/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/repository/RoleResourceRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/service/AccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/util/PrintUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/filter/ExceptionHandlerFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/ServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/ServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/JwtAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/JwtAuthenticationEntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/JwtRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/JwtRequestFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/JwtUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/JwtUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/RestControllerExceptionAdvice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/config/WebSecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +122,7 @@
       <updated>1627177754618</updated>
       <workItem from="1627177756070" duration="4469000" />
       <workItem from="1627370242407" duration="83000" />
-      <workItem from="1627439003232" duration="66730000" />
+      <workItem from="1627439003232" duration="74930000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1627177795311</created>
@@ -204,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627188843580</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Initial commit">
+      <created>1627806502789</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1627806502789</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,14 +185,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/JwtRequestFilter.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/JwtUserDetailsService.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/server/src/main/java/com/tdw/khh2/common/filter/ExceptionHandlerFilter.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
