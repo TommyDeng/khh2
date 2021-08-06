@@ -57,6 +57,7 @@
   </component>
   <component name="ProjectId" id="1vmqkXLfeJtY1t1C2G9jGYjqQO5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -87,6 +88,17 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.tdw.khh2.ServerApplication" />
@@ -107,6 +119,8 @@
       <workItem from="1627370242407" duration="83000" />
       <workItem from="1627439003232" duration="74930000" />
       <workItem from="1627869477218" duration="8494000" />
+      <workItem from="1628223872851" duration="834000" />
+      <workItem from="1628227452357" duration="671000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1627177795311</created>
